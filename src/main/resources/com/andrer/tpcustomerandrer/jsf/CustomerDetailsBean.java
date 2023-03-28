@@ -8,6 +8,10 @@ import jakarta.inject.Named;
 //import com.andrer.tpcustomerandrer.customerManager.ejb.CustomerManager;
 import com.andrer.tpcustomerandrer.discountManager.ejb.DiscountManager;
 import com.andrer.tpcustomerandrer.entities.Discount;
+import jakarta.faces.component.UIComponent;
+import jakarta.faces.context.FacesContext;
+import jakarta.faces.convert.Converter;
+import jakarta.faces.convert.FacesConverter;
 import java.util.List;
 
 /**
@@ -62,3 +66,8 @@ public class CustomerDetailsBean implements Serializable {
     return discountManager.getAllDiscounts();
   }
 }
+
+/**
+ *
+ * @author Nirina
+ */
